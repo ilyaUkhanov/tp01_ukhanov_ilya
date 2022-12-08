@@ -1,15 +1,14 @@
+@fontSize: 12px;
+@marginLow: 1rem;
+@paddingLow: 1rem;
+@paddingMedium: 2rem;
+@background: #f6f6f6;
+
 :root {
-    font-size: 12px;
+    font-size: @fontSize;
 }
 
 .root {
-    /* padding: 1rem;
-    margin: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -21,16 +20,21 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: @background;
+    padding: @paddingMedium;
 }
 
 .mainForm fieldset div {
     display: flex;
 }
 
+.mainForm label {
+    width: 50%;
+}
 
 .mainForm input {
-    width: 100%;
-    margin: 1rem;
+    width: 50%;
+    margin: @marginLow;
 }
 
 .mainForm fieldset {
